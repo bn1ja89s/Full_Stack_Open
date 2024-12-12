@@ -1,0 +1,114 @@
+p {
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+}
+
+/* 
+Varios elementos pueden compartir las mismas propiedades. En este caso, tanto los elementos <li> como <h1> tendrán el color de texto rojo.
+ */ 
+
+li,
+h1 {
+  color: red;
+}
+
+/*
+También se pueden asignar propiedades a un elemento con un id específico. En este caso, el elemento con el id "mi-id" tendrá el color de texto azul.
+*/
+#mi-id{
+  color: blue;
+}
+
+/*
+También se pueden asignar propiedades a un elemento con una clase específica. En este caso, los elementos con la clase "mi-clase" tendrán el color de texto verde.
+*/
+.mi-clase{
+  color: green;
+}
+
+/*
+Se pueden asignar propiedades a elementos que tienen un atributo específico. En este caso, los elementos <a> con el atributo target="_blank" tendrán el color de texto púrpura.
+*/
+a[target="_blank"] {
+  color: purple;
+}
+
+img[alt="imagen"] {
+  width: 100px;
+}
+
+
+/* 
+Se pueden asignar propiedades a elementos que están en un estado específico usando pseudoclases. En este caso, los elementos <a> cuando son visitados tendrán el color de texto gris.
+*/
+a:visited {
+  color: rgb(90, 160, 0);
+}
+
+a:hover {
+  color: rgb(255, 81, 0);
+}
+
+/* 
+Otro ejemplo de pseudoclase es :hover, que se aplica cuando el usuario pasa el cursor sobre un elemento. En este caso, los elementos <button> cambiarán su color de fondo a amarillo cuando el cursor esté sobre ellos.
+*/
+button:hover {
+  background-color: yellow;
+}
+
+h1:hover {
+  color: gray;
+}
+
+html {
+  font-size: 10px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
+  font-family: "Open Sans", sans-serif; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+/* 
+padding (relleno), el espacio alrededor del contenido. En el ejemplo siguiente, es el espacio alrededor del texto del párrafo.
+border (marco), la línea que se encuentra fuera del relleno.
+margin (margen), el espacio fuera del elemento que lo separa de los demás elementos.
+
+width (ancho del elemento)
+background-color, el color de fondo del contenido y del relleno
+color, el color del contenido del elemento (generalmente texto)
+text-shadow: coloca una sombra difuminada en el texto dentro del elemento
+display: selecciona el modo de visualización para el elemento (no te preocupes de esto por ahora)
+*/
+html {
+  background-color: #00539f;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ff9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 1px black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
